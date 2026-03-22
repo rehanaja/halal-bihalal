@@ -192,7 +192,7 @@ function QRPlaceholder() {
 
 export default function Donasi() {
   return (
-    <Section id="donasi" title="Donasi &amp; Infaq" arabic="التبرع">
+    <Section id="donasi" title="Donasi untuk uang saweran" arabic="التبرع">
       <div
         className="card-glass"
         style={{
@@ -203,21 +203,6 @@ export default function Donasi() {
           gap: 24,
         }}
       >
-        {/* Intro */}
-        <p
-          style={{
-            textAlign: 'center',
-            color: '#F5ECD788',
-            fontSize: '0.88rem',
-            lineHeight: 1.8,
-            fontFamily: "'Lato', sans-serif",
-            maxWidth: 340,
-          }}
-        >
-          Jika Anda ingin berpartisipasi, kami membuka donasi &amp; infaq dengan
-          tulus ikhlas. Berapapun yang Anda berikan adalah amal yang mulia.
-        </p>
-
         {/* Ayat */}
         <div
           style={{
