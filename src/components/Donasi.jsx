@@ -216,18 +216,6 @@ export default function Donasi() {
         >
           <p
             style={{
-              color: '#C9A84C88',
-              fontSize: '0.78rem',
-              fontFamily: "'Lato', sans-serif",
-              lineHeight: 1.7,
-              fontStyle: 'italic',
-            }}
-          >
-            "Perumpamaan orang yang menginfaqkan hartanya di jalan Allah seperti
-            sebutir biji yang menumbuhkan tujuh tangkai..."
-          </p>
-          <p
-            style={{
               color: '#C9A84C55',
               fontSize: '0.7rem',
               fontFamily: "'Lato', sans-serif",
