@@ -1,11 +1,12 @@
 import Section from './Section';
+import shareqr from '../assets/qris/shareqr.png';
 
 // ── Ganti dengan URL gambar QR QRIS asli Anda ────────────────────────────────
 // Cara: export QR dari aplikasi bank / GoPay / Dana / dll,
 // upload ke imgbb.com (gratis), lalu paste URL-nya di bawah.
-const QRIS_IMAGE_URL = null; // contoh: "https://i.ibb.co/xxxx/qris.png"
+const QRIS_IMAGE_URL = shareqr;
 
-const MERCHANT_NAME = 'Keluarga Besar Halal Bihalal';
+const MERCHANT_NAME = 'a/n PEBRI LEONARDI';
 
 // ── QR Placeholder SVG (tampil saat QRIS_IMAGE_URL masih null) ───────────────
 function QRPlaceholder() {
@@ -192,7 +193,7 @@ function QRPlaceholder() {
 
 export default function Donasi() {
   return (
-    <Section id="donasi" title="Donasi untuk uang saweran" arabic="التبرع">
+    <Section id="donasi" title="Donasi untuk uang saweran">
       <div
         className="card-glass"
         style={{
@@ -203,30 +204,6 @@ export default function Donasi() {
           gap: 24,
         }}
       >
-        {/* Ayat */}
-        <div
-          style={{
-            textAlign: 'center',
-            padding: '14px 20px',
-            background: '#C9A84C0a',
-            border: '1px solid #C9A84C22',
-            borderRadius: 10,
-            width: '100%',
-          }}
-        >
-          <p
-            style={{
-              color: '#C9A84C55',
-              fontSize: '0.7rem',
-              fontFamily: "'Lato', sans-serif",
-              marginTop: 4,
-              letterSpacing: 1,
-            }}
-          >
-            — QS. Al-Baqarah: 261
-          </p>
-        </div>
-
         {/* Scan label */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <div
@@ -305,17 +282,6 @@ export default function Donasi() {
           >
             {MERCHANT_NAME}
           </p>
-          <p
-            style={{
-              color: '#F5ECD755',
-              fontSize: '0.75rem',
-              fontFamily: "'Lato', sans-serif",
-              marginTop: 6,
-              letterSpacing: 1,
-            }}
-          >
-            Berlaku untuk semua aplikasi bank &amp; dompet digital
-          </p>
         </div>
 
         {/* Compatible app badges */}
@@ -327,24 +293,22 @@ export default function Donasi() {
             justifyContent: 'center',
           }}
         >
-          {['🏦 Bank', '🟢 GoPay', '🟣 OVO', '🔵 Dana', '⚪ ShopeePay'].map(
-            (app) => (
-              <span
-                key={app}
-                style={{
-                  background: '#0d2318',
-                  border: '1px solid #C9A84C22',
-                  borderRadius: 20,
-                  padding: '5px 14px',
-                  fontSize: '0.72rem',
-                  color: '#F5ECD777',
-                  fontFamily: "'Lato', sans-serif",
-                }}
-              >
-                {app}
-              </span>
-            ),
-          )}
+          {['🔵 Dana'].map((app) => (
+            <span
+              key={app}
+              style={{
+                background: '#0d2318',
+                border: '1px solid #C9A84C22',
+                borderRadius: 20,
+                padding: '5px 14px',
+                fontSize: '0.72rem',
+                color: '#F5ECD777',
+                fontFamily: "'Lato', sans-serif",
+              }}
+            >
+              {app}
+            </span>
+          ))}
         </div>
 
         {/* Closing dua */}

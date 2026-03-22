@@ -6,6 +6,7 @@ import Ucapan from './components/Ucapan';
 import Lokasi from './components/Lokasi';
 import Footer from './components/Footer';
 import Donasi from './components/Donasi';
+import Backsound from './components/Backsound';
 
 function Divider({ opacity = '33' }) {
   return (
@@ -80,9 +81,8 @@ export default function App() {
           border-radius: 16px;
           backdrop-filter: blur(8px);
         }
-        
       `}</style>
-
+      <Backsound />
       <Navbar />
       <Hero onRSVPClick={scrollToRSVP} />
       <Divider opacity="33" />
