@@ -94,7 +94,7 @@ export default function Hero({ onRSVPClick }) {
         Halal Bihalal
         <br />
         <span style={{ color: '#C9A84C' }}>
-          Keluarga Besar Hj. Sudarta Bin Sudarya
+          Keluarga Besar H. Sudarta Bin Sudarya
         </span>
       </h1>
 

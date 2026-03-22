@@ -69,7 +69,7 @@ export default function Backsound() {
           >
             Halal Bihalal
             <br />
-            <span style={{ color: '#C9A84C' }}>Keluarga Besar</span>
+            <span style={{ color: '#C9A84C' }}>Kel. Besar H. Sudarta</span>
           </p>
           <p
             style={{
